@@ -425,7 +425,8 @@ const App = () => {
         <div className="grid grid-cols-3 gap-3">
           {[{ title: 'Health records', sub: 'at your finger...', icon: '🩺', bg: 'bg-pink-50', arrow: 'bg-pink-500' },
             { title: 'Find local services', sub: 'near you', icon: '📍', bg: 'bg-indigo-50', arrow: 'bg-indigo-500' },
-            { title: 'Manage claims', sub: 'at your ease', icon: '📝', bg: 'bg-cyan-50', arrow: 'bg-cyan-500' }
+            { title: 'Manage claims', sub: 'at your ease', icon: '📝', bg: 'bg-cyan-50', arrow: 'bg-cyan-500' },
+            { title: 'SME Insurance', sub: '', icon: '📝', bg: 'bg-green-50', arrow: 'bg-cyan-500' }
           ].map((item, i) => (
             <div key={i} className={`${item.bg} rounded-2xl p-4 flex flex-col justify-between h-36 relative overflow-hidden group cursor-pointer hover:shadow-md transition-all`}>
               <div className="text-3xl mb-2">{item.icon}</div>
@@ -480,7 +481,7 @@ const App = () => {
             className="bg-orange-50 p-4 rounded-2xl shadow-sm border-2 border-orange-200 flex flex-col items-center text-center gap-2 hover:shadow-md transition-all cursor-pointer active:scale-95"
           >
              <Building size={32} className="text-orange-600 mb-1" />
-             <span className="font-bold text-gray-800">Retail & Corporate</span>
+             <span className="font-bold text-gray-800">SME Insurance</span>
           </div>
         </div>
       </div>
